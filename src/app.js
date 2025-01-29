@@ -3,6 +3,7 @@ import cors from 'cors';
 import db from './db/config.js'; // Adicionado a extensão .js
 import setupAssociations from './models/associations.js';
 import authRoutes from './routes/authRoutes.js'; // Adicione essa linha
+import authtesk from './routes/taskRoutes.js'; 
 const app = express();
 
 // Middlewares
@@ -14,6 +15,7 @@ setupAssociations();
 
 // Rotas
 app.use('/auth', authRoutes); // Adicione essa linha
+app.use('/authtesk', authtesk); 
 
 app.get('/', (req, res) => {
   res.status(200).json({message: 'Servidor rodando!'});
