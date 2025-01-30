@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 
 // Sincronizar modelos com o banco de dados
 db.sync({ alter: true }) // Sincroniza os modelos com o banco de dados
-  .then(() => console.log('Modelos sincronizados com o banco de dados'))
+  .then(() => console.log('📌 Modelos sincronizados com o banco de dados'))
   .catch((error) => console.error('Erro ao sincronizar modelos:', error));
 
 export default app;
