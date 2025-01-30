@@ -1,6 +1,12 @@
-node_modules/        # Ignorar dependências do Node.js
-.env                 # Ignorar variáveis de ambiente
-dist/                # Ignorar build de TypeScript (se aplicável)
-coverage/            # Ignorar relatórios de testes
-.DS_Store            # Ignorar arquivos do macOS
-node_modules
+# Ignorar dependências do Node.js
+node_modules/        
+# Ignorar variáveis de ambiente
+.env                 
+# Ignorar build de TypeScript (se aplicável)
+dist/                
+# Ignorar relatórios de testes
+coverage/            
+
+# Ignorar arquivos do macOS
+.DS_Store            
+
